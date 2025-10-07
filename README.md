@@ -1,42 +1,71 @@
+# 🚗 dotnet-parking-system
+Bootcamp Avanade Back-end com .NET e IA, 2025  
 
-# dotnet-parking-system
-Bootcamp Avanade Back-end com .NET e IA, 2025.
+![.NET](https://img.shields.io/badge/.NET-6-blue)
+![C#](https://img.shields.io/badge/C%23-Visual_Studio-blue)
+
+---
 
 # DIO - Trilha .NET - Fundamentos
-www.dio.me
+[www.dio.me](https://www.dio.me)
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+## 📝 Desafio de projeto
+Neste desafio, usei os conhecimentos que adquiri no módulo de fundamentos da trilha .NET da DIO para desenvolver um sistema de estacionamento funcional, com menu interativo para o usuário.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+---
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
+## 🏗 Contexto
+Fui responsável por criar um sistema que permite:  
+- Adicionar veículos  
+- Remover veículos e calcular o valor cobrado pelo período  
+- Listar todos os veículos atualmente estacionados
+
+---
+
+## 📌 Proposta
+Desenvolvi uma classe chamada **`Estacionamento`**, baseada no seguinte diagrama:  
 ![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
 
-A classe contém três variáveis, sendo:
+A classe possui três variáveis principais:  
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+- **`precoInicial`**: valor decimal cobrado ao estacionar o veículo  
+- **`precoPorHora`**: valor decimal cobrado por hora adicional  
+- **`veiculos`**: lista de strings que armazena apenas as placas dos veículos estacionados  
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+E três métodos principais:  
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+- **`AdicionarVeiculo`**: adiciona a placa do veículo à lista  
+- **`RemoverVeiculo`**: verifica se o veículo está estacionado, pede horas, calcula o valor total e remove da lista  
+- **`ListarVeiculos`**: exibe todos os veículos estacionados ou informa se não houver nenhum  
 
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
+Além disso, implementei um menu interativo com as seguintes opções:  
+1. Cadastrar veículo  
+2. Remover veículo  
+3. Listar veículos  
 4. Encerrar
 
+---
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## 💻 Tecnologias usadas
+- C#  
+- .NET 6+  
+- Visual Studio ou VS Code
+
+---
+
+## 🚀 Como executar o projeto
+
+1. Clone este repositório:
+
+```
+git clone https://github.com/seu-usuario/dotnet-parking-system.git
+```
+2. Acesse a pasta do projeto:
+```
+cd dotnet-parking-system
+```
+3. Compile e execute o projeto usando o .NET CLI:
+```
+dotnet run
+``` 
+4.  Siga o menu interativo no console para cadastrar, remover e listar veículos.
