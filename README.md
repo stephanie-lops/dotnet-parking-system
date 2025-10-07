@@ -48,7 +48,7 @@ Além disso, implementei um menu interativo com as seguintes opções:
 
 ## Tecnologias usadas
 - C#  
-- .NET 6+  
+- .NET 9 
 - Visual Studio ou VS Code
 
 ---
